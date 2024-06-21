@@ -3,7 +3,7 @@ from fastapi import FastAPI
 # Mongo Db Connection Code
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
-uri = "mongodb+srv://sectionc90:SYn0GnMkENvqRD7M@review.cnwhjqg.mongodb.net/?retryWrites=true&w=majority&appName=review"
+uri = "mongodb+srv://admin:test1234@review.cnwhjqg.mongodb.net/?retryWrites=true&w=majority&appName=review"
 
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))
