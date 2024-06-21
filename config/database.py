@@ -6,4 +6,4 @@ client = MongoClient(uri)
 
 db = client.book_review
 collection_name = db["review_collection"]
-
+new1 = db["new_collection"]
