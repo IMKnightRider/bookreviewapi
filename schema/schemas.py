@@ -14,9 +14,13 @@ def user_serial(user) -> dict:
         "user_id": str(user["_id"]),
         "name": user["name"],
         "email": user["email"],
-        "password": user["password"],
-        "author": user["author"]
+        "hashed_password": user["hashed_password"],
+        "author": user["disabled"]
     }
 
 def list_serial(books) -> list:
     return [individual_serial(book) for book in books]
+
+
+def user_list(users) -> list:
+    return [user_serial(user) for user in users]

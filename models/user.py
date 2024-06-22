@@ -9,10 +9,10 @@ class TokenData(BaseModel):
     username: str = None or None
 
 class User(BaseModel):
-    username: str
     email: str = None or None
-    full_name: str = None
+    name: str = None
     disabled: bool = None
     
+
 class UserInDB(User):
     hashed_password: str
