@@ -6,4 +6,4 @@ client = MongoClient(uri)
 
 db = client.book_review
 collection_name = db["book_collection"]
-user = db["user_collection"]
+user_collection = db["user_collection"]
