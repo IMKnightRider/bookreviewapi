@@ -9,5 +9,14 @@ def individual_serial(book) -> dict:
         "reviews": book["reviews"]
     }
 
+def user_serial(user) -> dict:
+    return {
+        "user_id": str(user["_id"]),
+        "name": user["name"],
+        "email": user["email"],
+        "password": user["password"],
+        "author": user["author"]
+    }
+
 def list_serial(books) -> list:
     return [individual_serial(book) for book in books]

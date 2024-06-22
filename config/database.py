@@ -5,5 +5,5 @@ uri = "mongodb+srv://admin:test1234@review.cnwhjqg.mongodb.net/?retryWrites=true
 client = MongoClient(uri)
 
 db = client.book_review
-collection_name = db["review_collection"]
-new1 = db["new_collection"]
+collection_name = db["book_collection"]
+user_collection = db["user_collection"]
