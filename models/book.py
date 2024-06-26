@@ -3,6 +3,7 @@ from pydantic import BaseModel
 
 class Book(BaseModel):
     title: str
+    img: str
     author: str
     genre: str
     year: int

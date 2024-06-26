@@ -6,7 +6,8 @@ def individual_serial(book) -> dict:
         "genre": book["genre"],
         "year": book["year"],
         "rating": book["rating"],
-        "reviews": book["reviews"]
+        "reviews": book["reviews"],
+        "img": book["img"],
     }
 
 def user_serial(user) -> dict:
