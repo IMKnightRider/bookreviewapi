@@ -33,10 +33,6 @@ async def get_user(id: str):
 async def read_users_me(current_user: User = Depends(get_current_user)):
     return current_user
 
-@router.get("/users/me/items")
-async def read_own_items(current_user: User = Depends(get_current_user)):   
-    return {"items": [{"item_id": "Foo", "owner": current_user.username}]}
-
 @router.get("/user/login")
 async def login_user(email: str, passwd: str):
     user = authenticate_user(user_collection, email, passwd)
